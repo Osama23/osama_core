@@ -83,7 +83,7 @@ dependencies:
 
   network_manager:
     git:
-      url: https://github.com/Osama23/network_manager
+      url: https://github.com/Osama23/network_manager.git
       ref: master
 #        //https://github.com/GetSakk/network_manager.git
 #      ref: releases/dev
