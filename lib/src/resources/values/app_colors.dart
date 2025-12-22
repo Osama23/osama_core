@@ -29,7 +29,6 @@ class AppColors {
   static const colorEFEFEE = Color(0xffEFEFEE);
   static const textGrey = Color(0xff8A8985);
   static const warningColor = Color(0xffE7690C);
-  static const white = Colors.white;
   static const yellowBGColor = Color(0xffFFF6EE);
   static const accentColor = Color(0xff1AA165);
   static const secondaryColor = Color(0xff6263AB);
@@ -91,6 +90,7 @@ class AppColors {
   static const mainSuccess = Color(0xFF1AA165);
   static const color5F6063 = Color(0xff5F6063);
   static const colorF2F2F3 = Color(0xffF2F2F3);
+
   // static const lightSuccess = Color(0xffECF9F5);
 
   static const mainPrimary = Color(0xffCFAF7A);
@@ -106,4 +106,11 @@ class AppColors {
   static const colorA3A3A3 = Color(0xffA3A3A3);
   static const colorADAEBC = Color(0xffADAEBC);
   static const colorFAFAFA = Color(0xffFAFAFA);
+
+  static const primary = Color(0xff003350);
+  static const secondary = Color(0xff40536b);
+  static const accentLight = Color(0xffa8c0e0);
+  static const yellow = Color(0xffFFEB73);
+  static const backgroundPage = Color(0xfff2f2f2);
+  static const white = Color(0xffffffff);
 }
