@@ -19,6 +19,7 @@ class GenericAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.backButtonColor,
     this.bottomWidget,
     this.elevation,
+    this.englishLangEnabled = false,
   });
 
   final String title;
@@ -34,6 +35,7 @@ class GenericAppBar extends StatelessWidget implements PreferredSizeWidget {
   final SystemUiOverlayStyle? systemOverlayStyle;
   final PreferredSizeWidget? bottomWidget;
   final double? elevation;
+  final bool englishLangEnabled;
 
   @override
   Widget build(BuildContext context) {
@@ -60,6 +62,7 @@ class GenericAppBar extends StatelessWidget implements PreferredSizeWidget {
         margin: const EdgeInsetsDirectional.only(start: 24),
         child: AppBackButton(
           backgroundColor: backButtonColor,
+          englishLangEnabled: englishLangEnabled,
         ),
       ),
       leadingWidth: 57.w,

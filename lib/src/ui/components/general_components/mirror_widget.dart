@@ -7,16 +7,18 @@ class MirrorWidget extends StatelessWidget {
   const MirrorWidget({
     required this.child,
     this.rotateOn,
+    this.englishLangEnabled = false,
     super.key,
   });
 
   final Widget child;
   final Locale? rotateOn;
+  final bool englishLangEnabled;
 
   @override
   Widget build(BuildContext context) {
     return Transform.rotate(
-      angle: Localizations.localeOf(context) != (rotateOn ?? const Locale('ar'))
+      angle: englishLangEnabled
           ? pi
           : 0,
       child: child,
