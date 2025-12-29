@@ -113,4 +113,8 @@ class AppColors {
   static const yellow = Color(0xffFFEB73);
   static const backgroundPage = Color(0xfff2f2f2);
   static const white = Color(0xffffffff);
+
+  static const backgroundDark = Color(0xff0f1c23);
+  static const accent = Color(0xff);
+
 }

@@ -22,6 +22,7 @@ class DefaultAppBottomSheet extends StatelessWidget {
     this.child,
     this.resizeToAvoidBottomInset = false,
     this.titleFontSize,
+    this.titleTextColor,
     this.hasCloseButton = false,
     this.leading,
     this.hasBottomRadius = true,
@@ -41,6 +42,7 @@ class DefaultAppBottomSheet extends StatelessWidget {
   final List<Widget>? actions;
   final Color backgroundColor;
   final Color? closeButtonColor;
+  final Color? titleTextColor;
   final Widget? child;
   final bool resizeToAvoidBottomInset;
   final bool hasCloseButton;
@@ -96,6 +98,7 @@ class DefaultAppBottomSheet extends StatelessWidget {
                             title!,
                             style: AppFonts.bodyBold16px.copyWith(
                               fontSize: titleFontSize ?? 16.sp,
+                              color: titleTextColor ?? AppColors.primary,
                             ),
                           )
                         : null,
