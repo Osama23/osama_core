@@ -119,7 +119,7 @@ class MainButton extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                           color: isEnabled && onTap != null
                               ? textColor ?? _textColor()
-                              : AppColors.secondText,
+                              : AppColors.white,
                           height: 21 / 14,
                         ),
                     minFontSize: 4,
