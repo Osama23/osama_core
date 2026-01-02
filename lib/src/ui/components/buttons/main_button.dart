@@ -63,7 +63,7 @@ class MainButton extends StatelessWidget {
       padding:
       padding ?? const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       color: backgroundColor ?? _backgroundColor(),
-      disabledColor: AppColors.basicBorderColor,
+      disabledColor: backgroundColor ?? AppColors.color4C4C4C,
       height: height,
       minWidth: width ?? double.infinity,
       shape: RoundedRectangleBorder(
