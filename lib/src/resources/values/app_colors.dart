@@ -107,8 +107,8 @@ class AppColors {
   static const colorADAEBC = Color(0xffADAEBC);
   static const colorFAFAFA = Color(0xffFAFAFA);
 
-  static const primary = Color(0xff003350);
-  static const secondary = Color(0xff40536b);
+  static const secondary = Color(0xff003350);
+  static const primary = Color(0xff40536b);
   static const accentLight = Color(0xffa8c0e0);
   static const yellow = Color(0xffFFEB73);
   static const backgroundPage = Color(0xfff2f2f2);
