@@ -26,6 +26,7 @@ class DefaultAppBottomSheet extends StatelessWidget {
     this.hasCloseButton = false,
     this.leading,
     this.hasBottomRadius = true,
+    this.leadingWidth,
   });
 
   final VoidCallback? onCloseClicked;
@@ -48,6 +49,7 @@ class DefaultAppBottomSheet extends StatelessWidget {
   final bool hasCloseButton;
   final Widget? leading;
   final bool hasBottomRadius;
+  final double? leadingWidth;
 
   @override
   Widget build(BuildContext context) {
@@ -134,7 +136,7 @@ class DefaultAppBottomSheet extends StatelessWidget {
                           ),
                         ],
                     leading: leading ?? const SizedBox.shrink(),
-                    leadingWidth: leading != null ? 90.w : null,
+                    leadingWidth: leadingWidth ?? (leading != null ? 90.w : null),
                   ),
                 ),
               if (children != null) ...children!,
