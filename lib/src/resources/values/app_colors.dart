@@ -115,6 +115,6 @@ class AppColors {
   static const white = Color(0xffffffff);
 
   static const backgroundDark = Color(0xff0f1c23);
-  static const accent = Color(0xff);
+  static const darkNavy = Color(0xff313044);
 
 }
