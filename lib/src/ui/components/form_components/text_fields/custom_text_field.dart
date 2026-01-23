@@ -34,6 +34,7 @@ class CustomAppTextField extends StatefulWidget {
     this.suffixText,
     this.suffixStyle,
     this.onFocusChanged,
+    this.backgroundColor,
   });
 
   final FormFieldValidator<String?>? validator;
@@ -64,6 +65,7 @@ class CustomAppTextField extends StatefulWidget {
   final String? suffixText;
   final TextStyle? suffixStyle;
   final void Function(bool)? onFocusChanged;
+  final Color? backgroundColor;
 
   @override
   State<CustomAppTextField> createState() => _CustomAppTextFieldState();
@@ -137,6 +139,7 @@ class _CustomAppTextFieldState extends State<CustomAppTextField> {
       suffixText: widget.suffixText,
       suffixStyle: widget.suffixStyle,
       onFocusChanged: widget.onFocusChanged,
+      backgroundColor: widget.backgroundColor,
     );
   }
 }
@@ -173,6 +176,7 @@ class _CustomTextField extends FormField<String> {
     TextStyle? suffixStyle,
     bool hasError = false,
     Function(bool)? onFocusChanged,
+    Color? backgroundColor,
   }) : super(
           key: const Key("_CustomTextField"),
           autovalidateMode: autoValidateMode,
@@ -193,7 +197,7 @@ class _CustomTextField extends FormField<String> {
                     color: enabled
                         ? (state.hasError || hasError)
                             ? AppColors.lightErrorColor
-                            : Colors.white
+                            : backgroundColor ?? Colors.white
                         : AppColors.basicBorderColor,
                     shape: RoundedRectangleBorder(
                       side: BorderSide(
