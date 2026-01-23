@@ -27,6 +27,7 @@ class CustomAppTextField extends StatefulWidget {
     this.hintTextDirection,
     this.maxLines,
     this.textAlign = TextAlign.start,
+    this.backgroundColor,
   });
 
   final FormFieldValidator<String?>? validator;
@@ -50,6 +51,7 @@ class CustomAppTextField extends StatefulWidget {
   final TextAlign textAlign;
   final bool autoUnFocus;
   final int? maxLines;
+  final Color? backgroundColor;
 
   @override
   State<CustomAppTextField> createState() => _CustomAppTextFieldState();
@@ -114,6 +116,7 @@ class _CustomAppTextFieldState extends State<CustomAppTextField> {
       autoUnFocus: widget.autoUnFocus,
       context: context,
       maxLines: widget.maxLines,
+      backgroundColor: widget.backgroundColor,
     );
   }
 }
@@ -143,6 +146,7 @@ class _CustomTextField extends FormField<String> {
     TextDirection? textDirection,
     TextDirection? hintTextDirection,
     int? maxLines,
+    Color? backgroundColor,
   }) : super(
          key: const Key("_CustomTextField"),
          builder: (state) {
@@ -162,7 +166,7 @@ class _CustomTextField extends FormField<String> {
                    color:
                        state.hasError
                            ? AppColors.lightErrorColor
-                           : Colors.white,
+                           : backgroundColor ?? Colors.white,
                    shape: RoundedRectangleBorder(
                      side: BorderSide(
                        color:
