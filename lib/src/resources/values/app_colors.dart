@@ -116,5 +116,14 @@ class AppColors {
 
   static const backgroundDark = Color(0xff0f1c23);
   static const darkNavy = Color(0xff313044);
-
+  static const color101114 = Color(0xff101114);
+  static const colorF6E4E4 = Color(0xffF6E4E4);
+  static const colorB42318 = Color(0xffB42318);
+  static const colorE8F0FE = Color(0xffE8F0FE);
+  static const color1F4FD8 = Color(0xff1F4FD8);
+  static const color4B79DE = Color(0xff4B79DE);
+  static const colorE4F6E6 = Color(0xffE4F6E6);
+  static const color1E7F43 = Color(0xff1E7F43);
+  static const colorEFF3FF = Color(0xffEFF3FF);
+  static const color03344F = Color(0xff03344F);
 }
